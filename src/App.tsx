@@ -37,185 +37,6 @@ interface PackageData {
   firstDetail : TrackingDetail;
   completeYN : string;
 }
-/*
-{
-    "adUrl": "",
-    "complete": true,
-    "invoiceNo": "520211621093",
-    "itemImage": "",
-    "itemName": "라임올리브 / 1/ 커트러리 1+1 바네 커트러리 세트 디저트 포크 나이프 스푼 젓가락 / 종류: 01.바네 세트 1+1 / 구성 및 색상: 4종세트 1+1_다크그린 /  / - 2개 / 2",
-    "level": 6,
-    "receiverAddr": "",
-    "receiverName": "",
-    "recipient": "",
-    "result": "Y",
-    "senderName": "",
-    "trackingDetails": [
-        {
-            "kind": "간선상차",
-            "level": 3,
-            "manName": "",
-            "manPic": "",
-            "telno": "031-956-1239",
-            "telno2": "",
-            "time": 1690194332000,
-            "timeString": "2023-07-24 19:25:32",
-            "where": "덕양A",
-            "code": null,
-            "remark": null
-        },
-        {
-            "kind": "집화처리",
-            "level": 2,
-            "manName": "",
-            "manPic": "",
-            "telno": "031-943-0682",
-            "telno2": "",
-            "time": 1690201598000,
-            "timeString": "2023-07-24 21:26:38",
-            "where": "[집화]경기고양마니",
-            "code": null,
-            "remark": null
-        },
-        {
-            "kind": "간선하차",
-            "level": 3,
-            "manName": "",
-            "manPic": "",
-            "telno": "",
-            "telno2": "",
-            "time": 1690283075000,
-            "timeString": "2023-07-25 20:04:35",
-            "where": "옥천HUB",
-            "code": null,
-            "remark": null
-        },
-        {
-            "kind": "행낭포장",
-            "level": 3,
-            "manName": "",
-            "manPic": "",
-            "telno": "",
-            "telno2": "",
-            "time": 1690284249000,
-            "timeString": "2023-07-25 20:24:09",
-            "where": "옥천HUB",
-            "code": null,
-            "remark": null
-        },
-        {
-            "kind": "간선하차",
-            "level": 3,
-            "manName": "",
-            "manPic": "",
-            "telno": "",
-            "telno2": "",
-            "time": 1690284867000,
-            "timeString": "2023-07-25 20:34:27",
-            "where": "옥천HUB",
-            "code": null,
-            "remark": null
-        },
-        {
-            "kind": "간선상차",
-            "level": 3,
-            "manName": "",
-            "manPic": "",
-            "telno": "",
-            "telno2": "",
-            "time": 1690284968000,
-            "timeString": "2023-07-25 20:36:08",
-            "where": "옥천HUB",
-            "code": null,
-            "remark": null
-        },
-        {
-            "kind": "간선하차",
-            "level": 3,
-            "manName": "",
-            "manPic": "",
-            "telno": "053-211-1366",
-            "telno2": "",
-            "time": 1690326182000,
-            "timeString": "2023-07-26 08:03:02",
-            "where": "대구동",
-            "code": null,
-            "remark": null
-        },
-        {
-            "kind": "배송출발\n(배달예정시간\n:13∼15시)",
-            "level": 5,
-            "manName": "정재일",
-            "manPic": "",
-            "telno": "053-965-7718",
-            "telno2": "01093529321",
-            "time": 1690341776000,
-            "timeString": "2023-07-26 12:22:56",
-            "where": "대구동구신서",
-            "code": null,
-            "remark": null
-        },
-        {
-            "kind": "배송완료",
-            "level": 6,
-            "manName": "정재일",
-            "manPic": "",
-            "telno": "053-965-7718",
-            "telno2": "01093529321",
-            "time": 1690347321000,
-            "timeString": "2023-07-26 13:55:21",
-            "where": "대구동구신서",
-            "code": null,
-            "remark": null
-        }
-    ],
-    "orderNumber": null,
-    "estimate": "13∼15시",
-    "productInfo": null,
-    "zipCode": null,
-    "lastDetail": {
-        "kind": "배송완료",
-        "level": 6,
-        "manName": "정재일",
-        "manPic": "",
-        "telno": "053-965-7718",
-        "telno2": "01093529321",
-        "time": 1690347321000,
-        "timeString": "2023-07-26 13:55:21",
-        "where": "대구동구신서",
-        "code": null,
-        "remark": null
-    },
-    "lastStateDetail": {
-        "kind": "배송완료",
-        "level": 6,
-        "manName": "정재일",
-        "manPic": "",
-        "telno": "053-965-7718",
-        "telno2": "01093529321",
-        "time": 1690347321000,
-        "timeString": "2023-07-26 13:55:21",
-        "where": "대구동구신서",
-        "code": null,
-        "remark": null
-    },
-    "firstDetail": {
-        "kind": "간선상차",
-        "level": 3,
-        "manName": "",
-        "manPic": "",
-        "telno": "031-956-1239",
-        "telno2": "",
-        "time": 1690194332000,
-        "timeString": "2023-07-24 19:25:32",
-        "where": "덕양A",
-        "code": null,
-        "remark": null
-    },
-    "completeYN": "Y"
-}
-*/
-
 interface Company {
   International: string;
   Code: string;
@@ -255,44 +76,44 @@ function App() {
 
   const themeColor :ThemeColor= {
     "default": {
-      "back": "bg-indigo-500",
-      "hover": "hover:bg-indigo-300",
-      "active": "bg-indigo-400",
-      "text": "text-indigo-500",
-      "outline": "outline-indigo-300",
-      "odd": "odd:bg-indigo-50",
-      "after": "after:bg-indigo-500",
-      "border": "border-indigo-300",
-      "rgb" : "#6366f1"
+      "back": "bg-teal-500",
+      "hover": "hover:bg-teal-300",
+      "active": "bg-teal-400",
+      "text": "text-teal-500",
+      "outline": "outline-teal-300",
+      "odd": "odd:bg-teal-50",
+      "after": "after:bg-teal-500",
+      "border": "border-teal-300",
+      "rgb" : "#14b8a6"
     },
-    "orange": {
-      "back": "bg-orange-500",
-      "hover": "hover:bg-orange-300",
-      "active": "bg-orange-400",
-      "text": "text-orange-500",
-      "outline": "outline-orange-300",
-      "odd": "odd:bg-orange-50",
-      "after": "after:bg-orange-500",
-      "border": "border-orange-300",
-      "rgb" : "#f97316"
+    "yellow": {
+      "back": "bg-yellow-500",
+      "hover": "hover:bg-yellow-300",
+      "active": "bg-yellow-400",
+      "text": "text-yellow-500",
+      "outline": "outline-yellow-300",
+      "odd": "odd:bg-yellow-50",
+      "after": "after:bg-yellow-500",
+      "border": "border-yellow-300",
+      "rgb" : "#eab308"
     },
-    "blue": {
-      "back": "bg-blue-500",
-      "hover": "hover:bg-blue-300",
-      "active": "bg-blue-400",
-      "text": "text-blue-500",
-      "outline": "outline-blue-300",
-      "odd": "odd:bg-blue-50",
-      "after": "after:bg-blue-500",
-      "border": "border-blue-300",
-      "rgb" : "#3b82f6"
+    "violet": {
+      "back": "bg-violet-500",
+      "hover": "hover:bg-violet-300",
+      "active": "bg-violet-400",
+      "text": "text-violet-500",
+      "outline": "outline-violet-300",
+      "odd": "odd:bg-violet-50",
+      "after": "after:bg-violet-500",
+      "border": "border-violet-300",
+      "rgb" : "#8b5cf6"
     }
   }
 
   const buttons :ButtonType[] = [
     {name: "기본", theme: "default"},
-    {name: "오렌지", theme: "orange"},
-    {name: "블루", theme: "blue"}
+    {name: "옐로우", theme: "yellow"},
+    {name: "바이올렛", theme: "violet"}
   ]
 
   useEffect(()=>{
@@ -425,24 +246,24 @@ function App() {
             </svg></div>
           </div>
       }
-      <div className={`${themeColor[theme].back} p-5 text-black text-sm md:text-xl xl:text-2xl flex justify-between`}>
-        <h3 className="font-extrabold">국내.외 택배조회 시스템</h3>
+      <div className={`p-5 text-black text-sm md:text-xl xl:text-2xl flex justify-between`}>
+        <h3 className={`${themeColor[theme].text} font-extrabold`}>국내.외 택배조회 시스템</h3>
         <div>
           <span>테마 :</span>
           {
             buttons.map((e,i)=>{
               return (
-                <button key={i} className={`mx-1 md:mx-2 xl:mx-3 `} onClick={()=>setTheme(e.theme)}>{e.name}</button>
+                <button key={i} className={`${themeColor[e.theme].text} mx-1 md:mx-2 xl:mx-3 `} onClick={()=>setTheme(e.theme)}>{e.name}</button>
               )
             })
           }
         </div>
       </div>
       <div className="w-4/5 md:w-3/5 xl:w-4/12 mx-auto my-40 flex rounded items-center pt-2 flex-wrap">
-        <div className="border-b basis-full py-2 px-2 flex justify-center items-center text-sm">
-            <span className="basis-[30%] text-center mr-5">국내 / 국외 선택</span>
-            <button className={`text-sm border p-1 px-5 rounded hover:text-white mr-4 ${isBtn === 1 ? 'text-white': 'text-black'} ${themeColor[theme].hover} ${isBtn === 1 ? themeColor[theme].active:''}`} onClick={()=>selectCode(1, '04', 'CJ대한통운')}>국내</button>
-            <button className={`text-sm border p-1 px-5 rounded hover:text-white ${isBtn === 2 ? 'text-white': 'text-black'} ${themeColor[theme].hover} ${isBtn === 2 ? themeColor[theme].active:''}`} onClick={()=>selectCode(2, '12', 'EMS')}>국외</button>
+        <div className={`${themeColor[theme].border} border-b basis-full py-2 px-2 flex justify-center items-center text-sm`}>
+            <span className="basis-[30%] text-center mr-5 text-lg">국내 / 국외 선택</span>
+            <button className={`text-sm border p-2 px-5 rounded hover:text-white mr-4 ${isBtn === 1 ? 'text-white': 'text-black'} ${themeColor[theme].hover} ${isBtn === 1 ? themeColor[theme].active:''}`} onClick={()=>selectCode(1, '04', 'CJ대한통운')}>국내</button>
+            <button className={`text-sm border p-2 px-5 rounded hover:text-white ${isBtn === 2 ? 'text-white': 'text-black'} ${themeColor[theme].hover} ${isBtn === 2 ? themeColor[theme].active:''}`} onClick={()=>selectCode(2, '12', 'EMS')}>국외</button>
         </div>
         <div className="basis-full py-4 border-b">
           <select className="w-full border p-2 rounded-md" value={tcode} onChange={(e)=>{
@@ -465,7 +286,7 @@ function App() {
         <div className="basis-full border-b py-4 text-center">
           <input type="text" onInput={blindNumber} placeholder="운송장 번호를 입력해주세요." className={`w-full border px-5 py-2 rounded-md ${themeColor[theme].outline}`}/>
         </div>
-        <div className="basis-full border-b py-4 text-center">
+        <div className="basis-full py-4 text-center">
           <button className={`${themeColor[theme].back} text-white px-5 py-2 rounded-md w-full`} onClick={PostSubmit}>조회하기</button>
         </div>
         {
@@ -494,7 +315,6 @@ function App() {
                   <div key={i} className={`${resultLevel ? themeColor[theme].after : 'after:bg-gray-200'} relative z-10 after:absolute after:w-[60px] after:h-[60px] after:rounded-full after:left-0 after:top-0`}>
                     <img className="relative z-10" src={`images/ic_sky_delivery_step${i+1}_on.png`} alt={PostListName[i]} />
                     <p className={`text-center text-xs mt-1 ${resultLevel && `${themeColor[theme].text} font-extrabold`}`}>{PostListName[i]}</p>
-                    {/* 레벨의 글자 > 테마의 색상 + 글자 진하게 */}
                   </div>
                 )
               })
@@ -506,15 +326,6 @@ function App() {
                 return (
                   <div className={`pl-20 py-5 relative group ${themeColor[theme].odd}`} key={i}>
                     <div className={`${i === 0 ? `${themeColor[theme].back} ${themeColor[theme].border}` : 'bg-white'} relative border-2 rounded-full w-2 h-2 -left-[30px] top-10 z-30`}></div>
-                    {/* infoTracking.trackingDetails.length = 6
-                      반복문을 통해서 i값이 증감
-                      현재 0번부터 시작하기 때문에 -1
-                      첫번째 6 - 0 -1 = 5
-                      두번째 6 - 1 -1 = 4
-                      세번째 6 - 2 -1 = 3
-                      네번째 6 - 3 -1 = 2
-                      다섯번째 6 - 4 -1 = 1
-                    */}
                     <p>{e.where} | {e.kind}</p>
                     <p>{e.telno}</p>
                     <p>{e.timeString}</p>
